@@ -1,47 +1,264 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hatırlaç – Gizlilik Politikası</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hatırlaç ilaç hatırlatma uygulaması — KVKK uyumlu gizlilik politikası ve aydınlatma metni." />
+  <title>Hatırlaç — Gizlilik Politikası</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.7; }
-    h1 { color: #0F6E56; }
-    h2 { color: #0F6E56; margin-top: 32px; }
-    p { margin: 12px 0; }
-    footer { margin-top: 48px; color: #888; font-size: 14px; }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #F2F2F7;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      color: #1C1C1E;
+      padding: 24px 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      color: #0F6E56;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0 0 8px;
+      line-height: 1.25;
+    }
+    h2 {
+      color: #0F6E56;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 32px 0 12px;
+      line-height: 1.3;
+    }
+    h3 {
+      color: #1C1C1E;
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0 8px;
+    }
+    p { margin: 12px 0; font-size: 15px; }
+    ul { padding-left: 20px; margin: 12px 0; }
+    li { margin: 6px 0; font-size: 15px; }
+    strong { color: #1C1C1E; font-weight: 600; }
+    a {
+      color: #0F6E56;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+    a:hover { color: #085041; }
+    .meta {
+      background: #EFEFF4;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 20px 0 32px;
+      font-size: 14px;
+    }
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 0;
+      gap: 16px;
+    }
+    .meta-row .label { color: #6E6E73; font-weight: 500; }
+    .meta-row .value { color: #1C1C1E; font-weight: 500; text-align: right; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+    table th, table td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid #E5E5EA;
+    }
+    table th { background: #F2F2F7; font-weight: 600; color: #6E6E73; }
+    .callout {
+      background: #E8F5F0;
+      border-left: 3px solid #0F6E56;
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    footer {
+      max-width: 720px;
+      margin: 24px auto 16px;
+      text-align: center;
+      font-size: 13px;
+      color: #8E8E93;
+      padding: 0 16px;
+    }
+    @media (max-width: 600px) {
+      body { padding: 12px 8px; }
+      main { padding: 24px 20px; border-radius: 12px; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 18px; }
+      .meta-row { flex-direction: column; gap: 2px; }
+      .meta-row .value { text-align: left; }
+    }
   </style>
 </head>
 <body>
-  <h1>Hatırlaç – Gizlilik Politikası</h1>
-  <p><strong>Son güncelleme:</strong> 1 Nisan 2026</p>
+  <main>
+    <h1>Hatırlaç — Gizlilik Politikası ve Aydınlatma Metni</h1>
 
-  <p>Hatırlaç uygulamasını kullandığınız için teşekkür ederiz. Gizliliğiniz bizim için önemlidir. Bu politika, uygulamamızın hangi verileri nasıl topladığını ve kullandığını açıklar.</p>
+    <div class="meta">
+      <div class="meta-row"><span class="label">Yürürlük tarihi</span><span class="value">4 Mayıs 2026</span></div>
+      <div class="meta-row"><span class="label">Sürüm</span><span class="value">1.1.0</span></div>
+      <div class="meta-row"><span class="label">Veri sorumlusu</span><span class="value">Utku Han Kocatürk (Bireysel geliştirici)</span></div>
+      <div class="meta-row"><span class="label">İletişim</span><span class="value"><a href="mailto:utkus.eth@gmail.com">utkus.eth@gmail.com</a></span></div>
+    </div>
 
-  <h2>1. Toplanan Veriler</h2>
-  <p>Hatırlaç, aşağıdaki verileri yalnızca cihazınızda yerel olarak saklar:</p>
-  <ul>
-    <li>İlaç adları, dozaj bilgileri ve hatırlatma saatleri</li>
-    <li>Aile/yakın profil bilgileri (isim, ilişki türü)</li>
-    <li>Bildirim tercihleri</li>
-  </ul>
-  <p>Bu veriler hiçbir sunucuya gönderilmez, üçüncü taraflarla paylaşılmaz.</p>
+    <p>Hatırlaç, ilaç hatırlatma ve aile içi takip için tasarlanmış mobil uygulamadır. 6698 sayılı <strong>Kişisel Verilerin Korunması Kanunu (KVKK)</strong> ve Apple App Store ilkeleri kapsamında bu metin, hangi kişisel verilerinizin nasıl işlendiğini açıklar.</p>
 
-  <h2>2. Kamera ve Fotoğraf Erişimi</h2>
-  <p>Uygulama, ilaç bilgilerini kaydetmek amacıyla kamera iznine ihtiyaç duyabilir. Bu erişim yalnızca kullanıcı tarafından başlatılan işlemlerde kullanılır.</p>
+    <h2>1. İşlenen kişisel veriler</h2>
 
-  <h2>3. Bildirimler</h2>
-  <p>Hatırlaç, ilaç hatırlatmaları göndermek için yerel bildirimler kullanır. Bildirim izni cihaz ayarlarından her zaman değiştirilebilir.</p>
+    <h3>1.1 Cihazınızda yerel olarak saklanan veriler</h3>
+    <p>Aşağıdaki veriler <strong>yalnızca telefonunuzda</strong> SQLite veritabanı ve iOS Keychain (<code>AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY</code>) içinde tutulur. <strong>Sunucuya gönderilmez. iCloud'a yedeklenmez.</strong></p>
+    <ul>
+      <li>İlaç adları, dozajları, alım saatleri</li>
+      <li>Doz alım/atlama kayıtları (uyum istatistiği için)</li>
+      <li>Profil bilgileri (girdiğiniz isim, doğum yılı)</li>
+      <li>Bildirim tercihleri</li>
+      <li>Kan şekeri, tansiyon, kilo gibi sağlık verileri (girilmişse)</li>
+      <li>Reçete fotoğrafları (girilmişse)</li>
+      <li>Doktor randevuları (girilmişse)</li>
+      <li>Semptom günlüğü (girilmişse)</li>
+    </ul>
 
-  <h2>4. Üçüncü Taraf Hizmetler</h2>
-  <p>Uygulama, herhangi bir reklam ağı veya analitik hizmet kullanmamaktadır.</p>
+    <h3>1.2 Bakıcı modu kullanıldığında işlenen veriler</h3>
+    <p><strong>Yalnızca Bakıcı Modu'nu açıkça onayladığınızda</strong> aşağıdaki veriler kısa süreli aktarımlar için kullanılır:</p>
+    <ul>
+      <li><strong>Apple Push Notification token</strong> (Expo Push token formatında, cihaz tanıtıcısı)</li>
+      <li><strong>Profilde girdiğiniz isim</strong> (1-50 karakter)</li>
+      <li><strong>Bağlı bakıcının isim ve token bilgisi</strong></li>
+    </ul>
 
-  <h2>5. Çocukların Gizliliği</h2>
-  <p>Uygulamamız 4 yaş ve üzeri kullanıcılara yöneliktir. 13 yaş altı kullanıcılardan bilerek kişisel veri toplamıyoruz.</p>
+    <h3>1.3 Push bildirimleri ile bakıcıya iletilen bilgi</h3>
+    <p>Bağlı bakıcılarınıza yalnızca aşağıdaki bilgiler bildirim olarak iletilir:</p>
+    <ul>
+      <li>İlaç adı ve doz alım/atlama durumu</li>
+      <li>Olay zamanı (saat:dakika)</li>
+      <li>Aynı ilaç için ardışık 2 atlanırsa "kritik" işaretli bildirim</li>
+    </ul>
+    <div class="callout"><strong>Hiçbir tıbbi tavsiye, dozaj detayı, doktor bilgisi veya kişisel sağlık notu paylaşılmaz.</strong></div>
 
-  <h2>6. İletişim</h2>
-  <p>Gizlilik politikamızla ilgili sorularınız için: <a href="mailto:utkuhankct@hotmail.com">utkuhankct@hotmail.com</a></p>
+    <h2>2. Üçüncü taraflarla paylaşım</h2>
 
-  <footer>© 2026 Utku Han Kocatürk. Tüm hakları saklıdır.</footer>
+    <h3>2.1 Cloudflare Workers (yurt dışı veri aktarımı)</h3>
+    <p>Bakıcı davet kodu sistemi <strong>Cloudflare Workers + Workers KV</strong> üzerinde çalışır.</p>
+    <ul>
+      <li><strong>Saklanan veri:</strong> Apple Push token + isim + üretim zamanı</li>
+      <li><strong>Saklama süresi:</strong> En fazla <strong>24 saat</strong>, sonra otomatik silinir</li>
+      <li><strong>Sunucu konumu:</strong> Cloudflare global edge ağı (Frankfurt önceliklendirilmiş)</li>
+      <li><strong>Erişim:</strong> Yalnızca davet kodunu bilen taraf bir kez okuyabilir; başarılı okuma sonrası kayıt anında silinir</li>
+      <li><strong>Yurt dışı aktarım:</strong> Cloudflare ABD merkezli; Frankfurt edge sunucularında işlem görür. KVKK Md. 9 kapsamında <strong>açık rızanızla</strong> aktarım yapılır</li>
+    </ul>
+
+    <h3>2.2 Expo Push Notification servisi</h3>
+    <p>Bildirimler Apple Push Notification Service (APNs) tarafından iletilir. Token yönlendirmesi için Expo servisi (<code>exp.host</code>) kullanılır. İletilen veri: push token, başlık, kısa metin. Apple gizlilik politikası: <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">apple.com/privacy</a>.</p>
+
+    <h3>2.3 CollectAPI (Nöbetçi Eczane)</h3>
+    <p>Nöbetçi eczane araması için CollectAPI kullanılır. <strong>Konumunuz veya kişisel veriniz paylaşılmaz</strong>, yalnızca seçtiğiniz il/ilçe sorgu olarak gönderilir.</p>
+
+    <h3>2.4 vapi.co (TİTCK İlaç Veritabanı)</h3>
+    <p>İlaç bilgileri vapi.co üzerinden TİTCK kaynaklı verilerle gösterilir. Aramanızdaki ilaç adı dışında veri paylaşılmaz.</p>
+
+    <h2>3. Konum verisi</h2>
+    <p>Yakındaki nöbetçi eczaneleri sıralamak amacıyla isteğe bağlı olarak konum izni istenir.</p>
+    <ul>
+      <li>İzin <strong>tamamen opsiyoneldir</strong>; reddedilirse uygulama il merkezine göre sıralama yapar</li>
+      <li>Konum verisi <strong>cihazda kalır</strong>, sunucuya gönderilmez</li>
+      <li>Yalnızca uygulama açıkken (<code>When In Use</code>) erişilir, arka planda erişilmez</li>
+    </ul>
+
+    <h2>4. Saklama süreleri</h2>
+    <table>
+      <thead>
+        <tr><th>Veri</th><th>Süre</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cihaz içi veriler (ilaç, log, profil, vb.)</td><td>Uygulamayı silene kadar</td></tr>
+        <tr><td>Bakıcı davet kodları (Cloudflare KV)</td><td>24 saat</td></tr>
+        <tr><td>Bakıcı push tokenları (cihazda)</td><td>Bağlantı silinene kadar</td></tr>
+        <tr><td>Konum verisi</td><td>Sadece uygulama oturumu süresince</td></tr>
+      </tbody>
+    </table>
+
+    <h2>5. Veri güvenliği</h2>
+    <ul>
+      <li><strong>iOS Keychain</strong> üzerinde <code>AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY</code> modunda saklama — iCloud Keychain ile diğer cihazlara senkronizasyon <strong>kapalı</strong></li>
+      <li><strong>HMAC-SHA256</strong> imzalı backend istekleri — yetkisiz davet üretimini engeller</li>
+      <li><strong>Per-code 5 hatalı deneme</strong> sonrası kod otomatik iptal — brute-force koruması</li>
+      <li><strong>Per-IP rate limit</strong> (10 GET/dk, 5 POST/saat) — saldırı önleyici</li>
+      <li>TLS 1.2+ tüm ağ iletişiminde</li>
+    </ul>
+
+    <h2>6. KVKK Md. 11 — Haklarınız</h2>
+    <p>Aşağıdaki haklarınız saklıdır:</p>
+    <ul>
+      <li><strong>(a)</strong> Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+      <li><strong>(b)</strong> İşleniyorsa bilgi talep etme</li>
+      <li><strong>(c)</strong> Amaç ve uygun kullanılıp kullanılmadığını öğrenme</li>
+      <li><strong>(d)</strong> Yurt içi/yurt dışı aktarılan tarafları bilme</li>
+      <li><strong>(e)</strong> Eksik/yanlış işlemenin düzeltilmesini isteme</li>
+      <li><strong>(f) Verilerin silinmesini veya yok edilmesini isteme</strong></li>
+      <li><strong>(g)</strong> Düzeltme/silme işlemlerinin aktarıldığı taraflara bildirilmesini isteme</li>
+      <li><strong>(ğ)</strong> Otomatik analiz aleyhine itiraz hakkı</li>
+      <li><strong>(h)</strong> Kanuna aykırı işleme nedeniyle zarar tazmini</li>
+    </ul>
+
+    <h3>Verilerimi nasıl silerim?</h3>
+    <ul>
+      <li><strong>Cihaz verilerini silmek için:</strong> Uygulamayı silmek tüm cihaz içi veriyi silecektir.</li>
+      <li><strong>Bakıcı bağlantısını silmek için:</strong> Bakıcı modu ekranında "Bağlantıyı Kaldır" butonu kullanılır. Hem hasta tarafı listesinden hem de bakıcının cihazından (silent push aracılığıyla) temizlenir.</li>
+      <li><strong>Davet kodunuzu iptal etmek için:</strong> 24 saat dolduğunda otomatik silinir veya "Yeni kod oluştur" eski kodu geçersiz kılar.</li>
+    </ul>
+    <p>Sorularınız için: <a href="mailto:utkus.eth@gmail.com"><strong>utkus.eth@gmail.com</strong></a></p>
+
+    <h2>7. Özel nitelikli kişisel veri (KVKK Md. 6)</h2>
+    <p>İlaç adı, dozaj ve alım/atlama kayıtları <strong>özel nitelikli sağlık verisi</strong> sayılır. Bu veriler:</p>
+    <ul>
+      <li>Cihaz dışına çıkarılmaz (yalnızca push bildirim metninde bakıcıya özetlenir)</li>
+      <li>iCloud'a yedeklenmez</li>
+      <li>Tanı, tedavi veya sigorta amaçlı işlenmez</li>
+    </ul>
+    <div class="callout"><strong>Tıbbi tavsiye verilmez.</strong> Her türlü ilaç kararı için hekiminize danışın.</div>
+
+    <h2>8. Çocuklar</h2>
+    <p>Hatırlaç 18 yaş altı kullanıcılar için tasarlanmamıştır. Çocuk hesabı oluşturulmaz; ebeveynler tarafından çocuklarının ilaç takibi için kullanılabilir, bu durumda veri sorumlusu ebeveyndir.</p>
+
+    <h2>9. Değişiklikler</h2>
+    <p>Bu metin Hatırlaç sürüm güncellemeleriyle değişebilir. Önemli değişikliklerde uygulama içi bilgilendirme yapılır.</p>
+
+    <h2>10. İletişim ve şikâyet</h2>
+    <ul>
+      <li><strong>Veri sorumlusu:</strong> Utku Han Kocatürk</li>
+      <li><strong>E-posta:</strong> <a href="mailto:utkus.eth@gmail.com">utkus.eth@gmail.com</a></li>
+      <li><strong>Şikâyet mercii:</strong> <a href="https://www.kvkk.gov.tr/" target="_blank" rel="noopener">Kişisel Verileri Koruma Kurumu</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    Hatırlaç © 2026 Utku Han Kocatürk · Türkiye yapımı
+  </footer>
 </body>
 </html>
